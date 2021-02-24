@@ -21,7 +21,7 @@ Things you may want to cover:
 `https://www.getpostman.com/collections/dc5ac8d32a98441ded30`
 
 # Heroku Access
-`http://refactorytest.herokuapp.com/`
+`https://refacbookingroom.herokuapp.com`
 
 # Database configuration with postgresql
 ```
