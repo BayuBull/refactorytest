@@ -4,7 +4,7 @@ class Booking < ApplicationRecord
   belongs_to :user
 
   def self.check_available_room(booking)
-
+    binding.pry
     room = Room.find_by(id: booking.room_id)
     last_booking = Booking.where(room_id: booking.room_id).order(check_out_time: :desc).last
 
@@ -24,6 +24,6 @@ class Booking < ApplicationRecord
     remainder = booking.boking_time.strftime("%e").to_i - Date.today.strftime("%e").to_i
 
     UserMailer.delay(run_at: remainder.days.from_now).notification_remainder(user, booking)
-    
+
   end
 end

@@ -91,7 +91,7 @@ Rails.application.configure do
     domain: "mail.google.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV.fetch("EMAIL"),
-    password: ENV.fetch("EMAIL_PASS")
+    user_name: "kuwangwung@gmail.com",
+    password: "baggrek@gmail.com"
   }
 end
