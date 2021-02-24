@@ -21,9 +21,9 @@ class Booking < ApplicationRecord
     user = User.find_by(id: booking.user_id)
 
     UserMailer.send_notification(user, booking).deliver_now
-    remainder = booking.boking_time.strftime("%e").to_i - Date.today.strftime("%e").to_i
+    remainder = booking.boking_time.strftime("%e").to_i - Date.today.strftime("%e").to_i rescue nil
 
-    UserMailer.delay(run_at: remainder.days.from_now).notification_remainder(user, booking)
+    UserMailer.delay(run_at: remainder.days.from_now).notification_remainder(user, booking) rescue nil
 
   end
 end
