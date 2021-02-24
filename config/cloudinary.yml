@@ -1,0 +1,10 @@
+# config/cloudinary.yml
+development:
+  cloud_name: "bayuag"
+  api_key: "452413569417356"
+  api_secret: "EhrPcMq4A1hjVd3P_zCwx3HZVq0"
+
+production:
+  cloud_name: "bayuag"
+  api_key: "452413569417356"
+  api_secret: "EhrPcMq4A1hjVd3P_zCwx3HZVq0"

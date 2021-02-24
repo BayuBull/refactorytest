@@ -1,0 +1,190 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta property="og:title" content="Proto.io Email Template">
+  <title>Email Verifikasi</title>
+  <style type="text/css">
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    body,
+    .backgroundTable {
+      background-color: rgba(235, 235, 235, 0.59);
+    }
+
+    h1,
+    .h1 {
+      color: #000;
+      display: block;
+      font-family: Open Sans, Arial;
+      font-size: 24px;
+      font-weight: lighter;
+      line-height: 100%;
+      text-align: left;
+    }
+
+    h2,
+    .h2 {
+      color: #000;
+      display: block;
+      font-family: Open Sans, Arial;
+      font-size: 22px;
+      font-weight: lighter;
+      line-height: 100%;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    h5,
+    .h5 {
+      color: #000;
+      display: block;
+      font-family: Open Sans, Arial;
+      font-size: 18px;
+      font-weight: lighter;
+      line-height: 100%;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    h4,
+    .h4 {
+      color: #000;
+      display: block;
+      font-family: Open Sans, Arial;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 100%;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .bodyContent img {
+      display: inline;
+      margin-bottom: 10px;
+    }
+
+    .bodyContent li {
+      color: #222;
+      list-style-type: none;
+      padding-bottom: 1px;
+      padding-top: 1px;
+    }
+
+    .bodyContent li span {
+      color: #222222;
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"
+  style="-webkit-text-size-adjust: none;margin: 0;padding: 0;background-color: rgba(235,235,235,0.59);width: 100% !important;">
+  <center>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable"
+      style="margin: 0;padding: 10px;height: 100% !important;width: 100% !important;">
+      <tr>
+        <td align="center" valign="top">
+          <table border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;background: white;"
+            id="templateContainer">
+            <tr>
+              <td align="center" valign="top">
+                <img align="none"
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                  style="width: 100%;max-width: 600px;border: none;height: auto;line-height: 100%;outline: none;text-decoration: none;font-size: 14px;font-weight: bold;text-transform: capitalize;">
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" style="max-width:520px;" id="templateBody">
+                  <tr>
+                    <td valign="top" class="bodyContent" style="background-color: #fff;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td valign="top">
+                            <div class="bodyContentArea"
+                              style="margin: 50px 20px 0px 20px;padding-bottom: 30px;color: #000;font-family: Open Sans,Arial;font-size: 12px;line-height: 150%;text-align: left;border-bottom: 1px solid #EBEBEB;">
+                              <h1>Notife Cek In Meeting Room</h1>
+                             
+                              <table style="margin:0px; padding:0px">
+                                <tr>
+                                  <td>
+                                    <ul style="padding-inline-start: 10px; margin: 0px;">
+                                      <li>Username</li>
+                                      <li>Tanggal Boking </li>
+                                      <li>Nama Meting Room</li>
+                                      <li>Total personil</li>
+                                      <li>Capasitas Room</li>
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <ul style="padding-inline-start: 10px;">
+                                      <li>: <%= @user.username %> </li>
+                                      <li>: <%= @booking.boking_time %> </li>
+                                      <li>: <%= @room.room_name %> </li>
+                                      <li>: <%= @booking.total_person %> </li>
+                                      <li>: <%= @room.room_capacity %> </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" style="max-width: 800px;border-top: 0;"
+                  id="templateFooter">
+                  <tr>
+                    <td valign="top" class="footerContent">
+                      <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                        <tr>
+
+                          <td valign="top" id="addressArea" style="border-top: 1px solid #F5F5F5;background: #f2f2f2;">
+                            <div
+                              style="color: #606060;font-family: Open Sans, Arial;font-size: 10px;line-height: 165%;text-align: center;">
+                              <br>Jln. Palagan Tentara Pelajar
+                              Km. 9,8
+                              Ngaglik, Kab. Sleman
+                              DI Yogyakarta 55581
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>
